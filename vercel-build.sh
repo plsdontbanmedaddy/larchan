@@ -1,21 +1,19 @@
 #!/bin/bash
 
-echo "BUILD START"
+echo "BUILD START: Running Composer, NPM, and Artisan commands..."
 
-# 1. Install PHP Dependencies
+# 1. Install PHP & Node Dependencies
 composer install --no-dev --optimize-autoloader
-
-# 2. Install Node.js Dependencies
 npm install
 
-# 3. Build Frontend Assets
+# 2. Build Frontend Assets
 npm run build
 
-# 4. Cache Laravel Config and Routes for Performance
+# 3. Cache Laravel Configs for Performance
 php artisan config:cache
 php artisan route:cache
 
-# 5. Run Database Migrations
+# 4. Run Database Migrations
 php artisan migrate --force
 
-echo "BUILD END"
+echo "BUILD END: Script finished successfully."
