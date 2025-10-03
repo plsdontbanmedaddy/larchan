@@ -51,3 +51,5 @@ Thumbs.db
 .vercel
 
 .vercel
+
+.vercel-build.sh
