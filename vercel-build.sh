@@ -1,10 +1,17 @@
 #!/bin/bash
 
-# 1. Run Composer Install
+echo "BUILD START"
+
+# 1. Install PHP Dependencies
 composer install --no-dev --optimize-autoloader
 
-# 2. Run Vite Build
+# 2. Install Node.js Dependencies
+npm install
+
+# 3. Build Frontend Assets
 npm run build
 
-# 3. Run Migrations
+# 4. Run Database Migrations
 php artisan migrate --force
+
+echo "BUILD END"

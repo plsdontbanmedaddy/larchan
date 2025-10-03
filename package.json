@@ -3,7 +3,6 @@
     "type": "module",
     "scripts": {
         "build": "vite build",
-        "vercel-build": "bash vercel-build.sh",
         "dev": "vite"
     },
     "dependencies": {
