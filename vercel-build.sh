@@ -11,7 +11,11 @@ npm install
 # 3. Build Frontend Assets
 npm run build
 
-# 4. Run Database Migrations
+# 4. Cache Laravel Config and Routes for Performance
+php artisan config:cache
+php artisan route:cache
+
+# 5. Run Database Migrations
 php artisan migrate --force
 
 echo "BUILD END"
