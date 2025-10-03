@@ -1,0 +1,50 @@
+# Laravel core
+/node_modules
+/vendor
+/public/storage
+/storage/*.key
+/storage/pail
+/storage/logs
+/storage/framework
+/bootstrap/cache
+
+# Build artifacts
+/public/build
+/public/hot
+
+# Environment files
+.env
+.env.backup
+.env.production
+
+# PHPUnit
+/.phpunit.cache
+/phpunit.result.cache
+
+# IDE and editor configs
+/.idea
+/.vscode
+/.fleet
+/.nova
+/.zed
+/.phpactor.json
+
+# Homestead
+Homestead.json
+Homestead.yaml
+
+# Debug logs
+npm-debug.log
+yarn-error.log
+
+# Auth and secrets
+/auth.json
+
+# Vercel
+.vercel
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+.vercel
